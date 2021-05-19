@@ -85,14 +85,23 @@ h3 {
   background-color: var(--dark-violet);
 }
 
+.line_bottom {
+  border-bottom: 1px solid var(--grayish-blue);
+  margin-bottom: 30px;
+}
+
 .mt_7 {
   margin-top: 70px;
 }
 
-.flex div {
+.flex_1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.gap {
+  gap: 10px;
 }
 
 h1, h2 {
@@ -107,6 +116,12 @@ h1, h2 {
 
 h3 {
   font-size: 1.5em;
+  margin: 20px 0;
+}
+
+p {
+  opacity: .8;
+  margin: 20px 0;
 }
 
 .bg_violet::before {
@@ -178,5 +193,44 @@ header::after {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+footer::before {
+  content: '';
+  background: url(./images/bg-pattern-footer-desktop.svg) no-repeat top left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: var(--very-light-gray);
+  position: relative;
+}
+
+footer h4 {
+  color: var(--dark-grayish-violet);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+footer .social_media ul li {
+  margin-left: 15px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: var(--dark-violet);
+  text-transform: uppercase;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
