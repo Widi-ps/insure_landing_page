@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  color: var(--dark-violet);
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", sans-serif;
+}
+
+.align_center{
+  align-items: center;
+}
+
+.align_start{
+  align-items: flex-start;
+}
+
+.just_between{
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.btn{
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn_reverse{
+  border: 1.5px solid var(--dark-violet);
+  color: var(--dark-violet);
+}
+
+.line_top::before{
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 150px;
+}
+
+.line_violet::before{
+  background-color: var(--dark-violet);
+}
+
+.mt_7{
+  margin-top: 70px;
+}
+
+.flex {
+  div {
+    flex: 1;
+  }
+}
+
+h1, h2{
+  font-size: 4em;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: 100;
+  position: relative;
+  margin: 10px 0;
+  padding-top: 50px;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+.bg_violet::before{
+  content: '';
+  background: url(./images/bg-pattern-how-we-work-desktop.svg) no-repeat top right;
+  background-size: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg_violet{
+  background-color: var(--dark-violet);
+  padding: 70px;
+  position: relative;
+  margin: 100px auto;
+
+  h2{
+    font-size: 3em;
+    color: #fff;
+    padding: 0;
+    width: 60%;
+  }
+}
+
+// Nav Styling
+nav {
+  ul{
+    list-style: none;
+    li{
+      margin-left: 30px;
+      a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--dark-grayish-violet);
+      }
+    }
+  }
+}
+// // Header Styling
+header::before{
+  content: '';
+  background: url(./images/bg-pattern-intro-left-desktop.svg) no-repeat bottom left;
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: var(--dark-violet);
+  color: #fff;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 250px;
+
+  .hero{
+    margin-bottom: -250px;
+  }
+}
+
+header::after{
+  content: '';
+  background: url(./images/bg-pattern-intro-right-desktop.svg) no-repeat top right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+// // Section Styling
+// section {
+// }
+// // Footer Styling
+// footer {
+// }
